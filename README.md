@@ -1,9 +1,14 @@
-# EXPERIMENT-NO--05-Distance measurement using Ultrasonic sensor
+# EXPERIMENT-NO--04-Distance measurement using Ultrasonic sensor
+
+## DATE: 08-03-2024
+## NAME: HARINI B.
+## ROLL NO :212221230035
+## DEPARTMENT: ARTIFICIAL INTELLIGENCE AND DATA SCIENCE
 
 ## AIM: 
 To interface an ultrasonic pair and measure the distance in centimeters , calculate the error
  
-### COMPONENTS REQUIRED:
+## COMPONENTS REQUIRED:
 1.	ultrasonic sensor module HC-SR04
 2.	1 KΩ resistor 
 3.	Arduino Uno 
@@ -11,7 +16,7 @@ To interface an ultrasonic pair and measure the distance in centimeters , calcul
 5.	Connecting wires 
 
 
-### THEORY: 
+## THEORY: 
 The HC-SR04 ultrasonic sensor uses SONAR to determine the distance of an object just like the bats do. It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package from 2 cm to 400 cm or 1” to 13 feet.
 
 The operation is not affected by sunlight or black material, although acoustically, soft materials like cloth can be difficult to detect. It comes complete with ultrasonic transmitter and receiver module.
@@ -34,13 +39,13 @@ The time between the transmission and reception of the signal allows us to calcu
 distance to an object = ((speed of sound in the air)*time)/2
 speed of sound in the air at 20ºC (68ºF) = 343m/s
 
-### FIGURE 01 CIRCUIT OF INTERFACING ULTRASONIC SENSOR 
+## FIGURE 01 CIRCUIT OF INTERFACING ULTRASONIC SENSOR 
 ![pic1](https://github.com/HariniBaskar/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/93427253/1d57cefc-f21f-4502-8fcf-e0f3debe0ea2)
 
-### SCHEMATIC VIEW
+## SCHEMATIC VIEW
 ![pic2](https://github.com/HariniBaskar/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/93427253/1f9f9cf4-3e96-49b1-8ff3-da24aa0b6f04)
 
-### PROCEDURE:
+## PROCEDURE:
 1.	Connect the circuit as per the circuit diagram 
 2.	Connect the board to your computer via the USB cable.
 3.	If needed, install the drivers.
@@ -53,7 +58,7 @@ speed of sound in the air at 20ºC (68ºF) = 343m/s
 10.	Plot the graph for the output voltage vs the resistance 
 
 
-### PROGRAM 
+## PROGRAM 
 ```
 Developed by: Harini B.
 Register Number: 212221230035
@@ -102,6 +107,13 @@ void loop()
   }
 }
 ```
+## OUTPUT
+### When (distance<50)
+![green](https://github.com/HariniBaskar/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/93427253/be172a24-ca32-4834-92c2-51ebe6b09b4c)
+
+### When (distance>50)
+![red](https://github.com/HariniBaskar/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/93427253/28eafcd5-9856-4a00-8f72-bfac93b67b6b)
+
 
 ### Distance vs measurement table 
 ![image](https://github.com/HariniBaskar/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/93427253/32877c03-8a68-44c3-833d-d86f4e18db74)
@@ -112,4 +124,4 @@ void loop()
 ![GRAPH](https://github.com/HariniBaskar/Experiment--04-Interfacing-digital-output-with-arduino-ultrasonic-sensor/assets/93427253/2e0bcd1c-1597-46d4-b70b-1e4bd5d192e3)
 
 ### RESULT
-Thus the distance value is measured in"CM" using ultrasonic sensor
+Thus the distance value is measured in "CM" using ultrasonic sensor
